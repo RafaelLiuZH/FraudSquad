@@ -1,0 +1,21 @@
+dataset: Amazon
+batch_size: 1000
+gnn_layers: 2
+n_layers: 2
+early_stopping: 50  
+gated: True
+hidden_dim: 100 
+num_heads: 3
+lr: 0.003
+wd: !!float 1e-4
+dropout: [0.2, 0.1]
+device: "cuda:0"
+lm: "bert-base-uncased"
+random_state: 2025
+max_epochs: 50
+test_size: 0.9
+val_size: 0.9 # val/(train+val)
+
+top_ratio: 0.03
+
+

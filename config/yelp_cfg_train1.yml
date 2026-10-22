@@ -1,0 +1,19 @@
+batch_size: 128
+hidden_dim: 100 
+num_heads: 3
+lr: 0.003
+wd: !!float 1e-4
+n_layers: 2
+dropout: [0.0, 0.0]
+device: "cuda:2"
+lm: "bert-base-uncased"
+random_state: 2025
+max_epochs: 50
+dataset: YelpChi
+test_size: 0.9
+val_size: 0.9 # val/(train+val)
+gnn_layers: 2
+top_ratio: 0.15
+early_stopping: 50 
+gated: True
+
